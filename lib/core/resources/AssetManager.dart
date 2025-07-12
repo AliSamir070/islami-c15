@@ -18,4 +18,11 @@ abstract class AssetManager{
  static const String leftCorner = "assets/images/left_corner.png";
  static const String rightCorner = "assets/images/right_corner.png";
  static const String mosque = "assets/images/mosque.png";
+ static const String quranBack = "assets/images/quran_back.png";
+ static const String islami = "assets/images/islami.png";
+ static const String quranNumber = "assets/images/hexagonal.svg";
+ static const String quranRecently = "assets/images/quran_recently.png";
+ static const String leftCorner = "assets/images/left_corner.png";
+ static const String rightCorner = "assets/images/right_corner.png";
+ static const String mosque = "assets/images/mosque.png";
 }
