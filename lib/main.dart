@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       initialRoute: HomeScreen.routeName,
       routes: {
         HomeScreen.routeName:(_)=>HomeScreen(),
-        SuraDetailsScreen.routeName:(_)=>SuraDetailsScreen()
+        SuraDetailsScreen.routeName:(_)=>SuraDetailsScreen(),
         HadethDetailsScreen.routeName:(_)=>HadethDetailsScreen()
       },
     );
