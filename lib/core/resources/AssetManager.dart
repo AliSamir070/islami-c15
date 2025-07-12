@@ -9,4 +9,13 @@ abstract class AssetManager{
  static const String TimeSelectedIcon = "assets/images/time_selected.svg";
  static const String SebhaIcon = "assets/images/sebha.svg";
  static const String SebhaSelectedIcon = "assets/images/sebha_selected.svg";
+ static const String hadethBack = "assets/images/hadeth_back.png";
+ static const String islamiLogo = "assets/images/islami_logo.png";
+ static const String hadeithMosque = "assets/images/hadith_mosque.png";
+ static const String hadeithCardBack = "assets/images/HadithCardBack.png";
+ static const String leftHadithCorner = "assets/images/left_corner_hadeth.png";
+ static const String rightHadithCorner = "assets/images/right_corner_hadeth.png";
+ static const String leftCorner = "assets/images/left_corner.png";
+ static const String rightCorner = "assets/images/right_corner.png";
+ static const String mosque = "assets/images/mosque.png";
 }

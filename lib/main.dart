@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_c15/core/resources/ColorManager.dart';
+import 'package:islami_c15/ui/hadeth_details/screen/hadeth_details_screen.dart';
 import 'package:islami_c15/ui/home/screen/home_screen.dart';
 
 void main() {
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: HomeScreen.routeName,
       routes: {
-        HomeScreen.routeName:(_)=>HomeScreen()
+        HomeScreen.routeName:(_)=>HomeScreen(),
+        HadethDetailsScreen.routeName:(_)=>HadethDetailsScreen()
       },
     );
   }
