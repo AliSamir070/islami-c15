@@ -48,13 +48,13 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.asset(AssetManager.leftCorner),
+                      Image.asset(AssetManager.leftCorner,height: 92,width: 92,),
                       Text(suraModel.suraNameAr,style: TextStyle(
                           color: ColorManager.navBarColor,
                           fontWeight: FontWeight.w700,
                           fontSize: 24
                       ),),
-                      Image.asset(AssetManager.rightCorner),
+                      Image.asset(AssetManager.rightCorner,height: 92,width: 92,),
                     ],),
                   Expanded(
                     child: sura.isNotEmpty?SingleChildScrollView(

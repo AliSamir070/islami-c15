@@ -9,12 +9,15 @@ import 'package:islami_c15/ui/sura_details/screen/suradetails_sceen.dart';
 
 class SuraWidget extends StatelessWidget {
   SuraModel suraModel;
-  SuraWidget(this.suraModel);
+  void Function() onSuraClicked;
+  SuraWidget(this.suraModel,this.onSuraClicked);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: (){
+        // add sura object in recently list
+        onSuraClicked();
         Navigator.pushNamed(context, SuraDetailsScreen.routeName,arguments: suraModel);
       },
       child: Row(
