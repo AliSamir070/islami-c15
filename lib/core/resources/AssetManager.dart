@@ -9,4 +9,11 @@ abstract class AssetManager{
  static const String TimeSelectedIcon = "assets/images/time_selected.svg";
  static const String SebhaIcon = "assets/images/sebha.svg";
  static const String SebhaSelectedIcon = "assets/images/sebha_selected.svg";
+ static const String screen1="assets/images/screen1.png";
+ static const String screen2="assets/images/screen2.png";
+ static const String screen3="assets/images/screen3.png";
+ static const String screen4="assets/images/screen4.png";
+ static const String screen5="assets/images/screen5.png";
+ static const String logo="assets/images/Logo.png";
+
 }
