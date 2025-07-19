@@ -22,4 +22,11 @@ abstract class AssetManager{
  static const String islami = "assets/images/islami.png";
  static const String quranNumber = "assets/images/hexagonal.svg";
  static const String quranRecently = "assets/images/quran_recently.png";
+ static const String screen1="assets/images/screen1.png";
+ static const String screen2="assets/images/screen2.png";
+ static const String screen3="assets/images/screen3.png";
+ static const String screen4="assets/images/screen4.png";
+ static const String screen5="assets/images/screen5.png";
+ static const String logo="assets/images/Logo.png";
+
 }
