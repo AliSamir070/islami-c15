@@ -7,4 +7,5 @@ abstract final class StringsManager{
   static const String time = "Time";
   static const String suraName = "Sura Name";
   static const String suraList = "Suras List";
+  static const String onBoadringFlag='onBoardingFlag';
 }
