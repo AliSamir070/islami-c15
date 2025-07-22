@@ -22,4 +22,14 @@ abstract class AssetManager{
  static const String islami = "assets/images/islami.png";
  static const String quranNumber = "assets/images/hexagonal.svg";
  static const String quranRecently = "assets/images/quran_recently.png";
+ static const String SebhaBody = "assets/images/SebhaBody.png";
+ static const String SenhaHand= "assets/images/SebahaHand.png";
+ static const String welcome = "assets/images/welcome1.png";
+ static const String kabba = "assets/images/kabba.png";
+ static const String reading = "assets/images/welcome.png";
+ static const String bearish = "assets/images/bearish.png";
+ static const String radio = "assets/images/radio.png";
+ static const String SebhaBackgroudn="assets/images/taj-mahal-agra-india 1.png";
+
+
 }
