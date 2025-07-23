@@ -28,5 +28,11 @@ abstract class AssetManager{
  static const String screen4="assets/images/screen4.png";
  static const String screen5="assets/images/screen5.png";
  static const String logo="assets/images/Logo.png";
+ static const String sebhaback="assets/images/sebhaback.png";
+ static const String Mask="assets/images/Mask group.png";
+ static const String sebhabody="assets/images/SebhaBody 1.png";
+
+
+
 
 }
