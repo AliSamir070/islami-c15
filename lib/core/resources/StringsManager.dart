@@ -1,4 +1,6 @@
-abstract final class StringsManager{
+// ignore_for_file: file_names
+
+abstract final class StringsManager {
   static const String mostRecently = "Most Recently";
   static const String quran = "Quran";
   static const String hadeth = "Hadith";
