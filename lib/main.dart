@@ -3,6 +3,7 @@ import 'package:islami_c15/core/PrefsManager.dart';
 import 'package:islami_c15/core/resources/ColorManager.dart';
 import 'package:islami_c15/ui/hadeth_details/screen/hadeth_details_screen.dart';
 import 'package:islami_c15/ui/home/screen/home_screen.dart';
+import 'package:islami_c15/ui/onboarding/screen/screen.dart';
 import 'package:islami_c15/ui/sura_details/screen/suradetails_sceen.dart';
 
 void main() async{
@@ -29,11 +30,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: HomeScreen.routeName,
+      initialRoute: IntroScreen.routeNames,
       routes: {
         HomeScreen.routeName:(_)=>HomeScreen(),
         SuraDetailsScreen.routeName:(_)=>SuraDetailsScreen(),
-        HadethDetailsScreen.routeName:(_)=>HadethDetailsScreen()
+        HadethDetailsScreen.routeName:(_)=>HadethDetailsScreen(),
+        IntroScreen.routeNames:(_)=>IntroScreen()
       },
     );
   }
