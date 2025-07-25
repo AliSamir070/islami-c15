@@ -34,11 +34,17 @@ class _HadethTabState extends State<HadethTab> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(AssetManager.islamiLogo,height: 130,fit: BoxFit.fitHeight,),
+          Image.asset(
+            AssetManager.islamiLogo,
+            height: 130,
+            fit: BoxFit.fitHeight,),
           SizedBox(height: 50,),
           Expanded(
             child: ahadeth.isEmpty
-                ?Center(child: CircularProgressIndicator(color: ColorManager.navBarColor,),)
+                ?Center(child:
+            CircularProgressIndicator(
+              color: ColorManager.navBarColor,
+            ),)
                 :PageView.builder(
               controller: controller,
                 itemBuilder: (context, index) =>HadethItem(ahadeth[index]),

@@ -25,14 +25,14 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
       backgroundColor: ColorManager.background,
       appBar: AppBar(
         centerTitle: true,
-        title: Text(suraModel.suraNameEn,style: TextStyle(
+        title: Text(suraModel.suraNameEn,style: const TextStyle(
           color: ColorManager.navBarColor,
           fontWeight: FontWeight.w700,
           fontSize: 20
         ),),
         leading: IconButton(onPressed: (){
           Navigator.pop(context);
-        }, icon: Icon(
+        }, icon: const Icon(
           Icons.arrow_back,
           color: ColorManager.navBarColor,
         )),
@@ -49,7 +49,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Image.asset(AssetManager.leftCorner,height: 92,width: 92,),
-                      Text(suraModel.suraNameAr,style: TextStyle(
+                      Text(suraModel.suraNameAr,style: const TextStyle(
                           color: ColorManager.navBarColor,
                           fontWeight: FontWeight.w700,
                           fontSize: 24
@@ -61,14 +61,16 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                       child: Text(sura,
                         textDirection: TextDirection.rtl,
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: ColorManager.navBarColor,
                             fontSize: 20,
                             fontWeight: FontWeight.w700
                         ),
                       ),
                     )
-                        :Center(child: CircularProgressIndicator(color: ColorManager.navBarColor,)),
+                        :const Center(
+                          child: CircularProgressIndicator(
+                          color: ColorManager.navBarColor,)),
                   ),
                 ],
               ),

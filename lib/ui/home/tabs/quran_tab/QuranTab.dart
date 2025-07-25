@@ -38,11 +38,15 @@ class _QuranTabState extends State<QuranTab> {
       ),
       width: double.infinity,
       decoration: BoxDecoration(
-        image: DecorationImage(image: AssetImage(AssetManager.quranBack),fit: BoxFit.fill),
+        image: DecorationImage(
+            image: AssetImage(AssetManager.quranBack),
+            fit: BoxFit.fill),
       ),
       child: Column(
         children: [
-          Image.asset(AssetManager.islami,fit: BoxFit.fitHeight,height: 130,),
+          Image.asset(AssetManager.islami,
+            fit: BoxFit.fitHeight,
+            height: 130,),
           SizedBox(height: 21,),
           TextField(
             onChanged: (value) {
