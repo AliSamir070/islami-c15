@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:islami_c15/core/resources/AssetManager.dart';
@@ -7,6 +9,7 @@ import 'package:islami_c15/ui/home/tabs/quran_tab/QuranTab.dart';
 import 'package:islami_c15/ui/home/tabs/radio_tab/RadioTab.dart';
 import 'package:islami_c15/ui/home/tabs/sebha_tab/SebhaTab.dart';
 import 'package:islami_c15/ui/home/tabs/time_tab/TimeTab.dart';
+
 import '../../../core/resources/ColorManager.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -28,12 +31,13 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: ColorManager.background,
       bottomNavigationBar: NavigationBar(
           labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
           backgroundColor: ColorManager.navBarColor,
           indicatorColor: ColorManager.background.withOpacity(0.6),
-          selectedIndex:selectedIndex ,
+          selectedIndex: selectedIndex,
           onDestinationSelected: (newIndex) {
             setState(() {
               selectedIndex = newIndex;
@@ -41,52 +45,41 @@ class _HomeScreenState extends State<HomeScreen> {
           },
           destinations: [
             NavigationDestination(
-                icon:SvgPicture.asset(
-                  AssetManager.QuranIcon,
-                ) ,
-                label: StringsManager.quran,
-                selectedIcon: SvgPicture.asset(
-                    AssetManager.QuranSelectedIcon
-                ),
+              icon: SvgPicture.asset(
+                AssetManager.QuranIcon,
+              ),
+              label: StringsManager.quran,
+              selectedIcon: SvgPicture.asset(AssetManager.QuranSelectedIcon),
             ),
             NavigationDestination(
-                icon:SvgPicture.asset(
-                  AssetManager.hadethIcon,
-                ) ,
-                label: StringsManager.hadeth,
-                selectedIcon: SvgPicture.asset(
-                    AssetManager.hadethSelectedIcon
-                ),
+              icon: SvgPicture.asset(
+                AssetManager.hadethIcon,
+              ),
+              label: StringsManager.hadeth,
+              selectedIcon: SvgPicture.asset(AssetManager.hadethSelectedIcon),
             ),
             NavigationDestination(
-                icon:SvgPicture.asset(
-                  AssetManager.SebhaIcon,
-                ) ,
-                label: StringsManager.sebha,
-                selectedIcon: SvgPicture.asset(
-                    AssetManager.SebhaSelectedIcon
-                ),
+              icon: SvgPicture.asset(
+                AssetManager.SebhaIcon,
+              ),
+              label: StringsManager.sebha,
+              selectedIcon: SvgPicture.asset(AssetManager.SebhaSelectedIcon),
             ),
             NavigationDestination(
-                icon:SvgPicture.asset(
-                  AssetManager.radioIcon,
-                ) ,
-                label: StringsManager.radio,
-                selectedIcon: SvgPicture.asset(
-                    AssetManager.radioSelectedIcon
-                ),
+              icon: SvgPicture.asset(
+                AssetManager.radioIcon,
+              ),
+              label: StringsManager.radio,
+              selectedIcon: SvgPicture.asset(AssetManager.radioSelectedIcon),
             ),
             NavigationDestination(
-                icon:SvgPicture.asset(
-                  AssetManager.TimeIcon,
-                ) ,
-                label: StringsManager.time,
-                selectedIcon: SvgPicture.asset(
-                    AssetManager.TimeSelectedIcon
-                ),
+              icon: SvgPicture.asset(
+                AssetManager.TimeIcon,
+              ),
+              label: StringsManager.time,
+              selectedIcon: SvgPicture.asset(AssetManager.TimeSelectedIcon),
             ),
-          ]
-      ),
+          ]),
       body: tabs[selectedIndex],
     );
   }
